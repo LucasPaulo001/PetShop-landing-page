@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Irish+Grover&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-width: 300px;
+}
+#header_content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    background-color: rgb(191, 117, 52);
+    color: white;
+    height: 80px;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+}
+#header_content > #logo{
+    font-family: "Irish Grover", system-ui;
+    font-size: 30px;
+    padding: 0px 0px 0px 10px;
+}
+
+#header_content > #menu > ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    font-size: 25px;
+}
+#page1{
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+#container_intro{
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 1fr;
+    
+}
+#content-intro{
+    background-image: linear-gradient(to bottom ,rgb(217, 158, 106), rgb(140, 106, 42));
+}
+#container_intro #txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    color: white;
+    padding-top: 15%;
+    font-family: "Inter", sans-serif;
+}
+#txt > h2{
+    padding: 5%;
+}
+.txt > .list-txt > li{
+    list-style: circle;
+}
+#container_intro > #img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15%;
+}
+#img > img{
+    border-radius: 5%;
+    border: 1px white solid;
+    height: 30vw;
+}
+.btnServ, .btnS{
+    height: 50px;
+    width: 140px;
+    border-radius: 20px;
+    border: 1px white solid;
+    font-size: 20px;
+    color: white;
+    background-image: linear-gradient(to right, rgb(191, 117, 52), rgb(233, 139, 56));
+    cursor: pointer;
+}
+#wave{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Serviços*/
+
+.img > img{
+    height: 30vw;
+    border-radius: 100%;
+}
+.img{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+#part-dog-shop, #part-cat-shop{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+.txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    font-family: "Inter", sans-serif;
+}
+#btn{
+    padding: 10%;
+}
+#msg{
+    display: grid;
+    grid-template-columns: 1fr 25%;
+    grid-template-rows: 1fr;
+    background-image: linear-gradient(to right, rgb(233, 139, 56), rgb(217, 158, 106));
+    color: white;
+    font-size: "Inter", sans-serif;
+    border: 4px solid rgb(191, 117, 52);
+    margin-top: 100px;
+}
+#txt-msg{
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.msg-content{
+    width: 50%;
+}
+@media (max-width: 750px){
+    #container_intro{
+        grid-template-columns: 100%;
+    }
+    #txt > h2{
+        font-size: 16px;
+    }
+    #container_intro #txt{
+        padding-top: 15px;
+        font-size: 18px;
+        text-indent: 10px;
+    }
+    #btn{
+        height: 150px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btnServ{
+        height: 40px;
+        font-size: 16px;
+    }
+    #menu > ul > li{
+        display: none;
+    }
+    .txt{
+        font-size: 18px;
+    }
+    
+    #img > img{
+        border-radius: 5%;
+        border: 1px white solid;
+        height: 50vw;
+    }
+    #part-dog-shop, #part-cat-shop{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    #part-cat-shop > .txt{
+        order: 2;
+    }
+    #part-cat-shop > .img{
+        order: 1;
+    }
+    #logo > h1{
+        font-size: 16px;
+    }
+    #msg{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    #msg > #txt-msg{
+        font-size: 20px;
+        text-align: center;
+    }
+    #img-msg{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 480px){
+    .img > img{
+        height: 50vw;
+    }
+}
