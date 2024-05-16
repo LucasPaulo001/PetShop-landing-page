@@ -9,6 +9,9 @@
 body{
     min-width: 300px;
 }
+html{
+    scroll-behavior: smooth;
+}
 #header_content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -124,7 +127,7 @@ body{
     grid-template-rows: 1fr;
     background-image: linear-gradient(to right, rgb(233, 139, 56), rgb(217, 158, 106));
     color: white;
-    font-size: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
     border: 4px solid rgb(191, 117, 52);
     margin-top: 100px;
 }
@@ -137,6 +140,90 @@ body{
 .msg-content{
     width: 50%;
 }
+
+/*Apresentação de serviços*/
+#presentation-serv{
+    margin-top: 50px;
+}
+
+#presentation-serv{
+    background-color: rgb(191, 117, 52);
+}
+#servises-dog > .title{
+    color: white;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+#products > .title{
+    color: white;
+    padding: 50px 0px 0px;
+    font-size: 1em;
+    font-family: "Inter", sans-serif;
+}
+#foods{
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: 80%;
+    height: 500px;
+    margin: 0 50px;
+    gap: 50px;
+    justify-content: center;
+    justify-items: center;
+    align-items: end;
+}
+.img-product{
+    width: fit-content;
+    height: 100%;
+
+}
+#acessorio{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#foods > .description-product, #acessorio > .description-product{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-image: linear-gradient(to bottom, rgb(233, 139, 56), rgb(217, 158, 106));
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.774);
+    align-items: center;
+    height: 250px;
+}
+.description-product > .description{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    font-family: 'Inter';
+    color: white;
+}
+.space{
+    height: 100px;
+    background-image: linear-gradient(to right, rgb(233, 139, 56), rgb(217, 158, 106));
+    border: none;
+}
+
+#animal-health > #title-health, #presentation-health > #part-welcome, #part-description{
+    color: white;
+    font-family: 'Inter';
+    padding: 25px;
+    font-size: 1em;
+}
+#presentation-health > #img-doctor{
+    display: flex;
+    justify-content: center;
+    height: 250px;
+}
+#img-doctor > img{
+    border-radius: 100%;
+    height: 100%;
+}
+
 @media (max-width: 750px){
     #container_intro{
         grid-template-columns: 100%;
@@ -196,6 +283,11 @@ body{
     #img-msg{
         display: flex;
         justify-content: center;
+    }
+    #foods{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        height: 100%;
     }
 }
 @media (max-width: 480px){
