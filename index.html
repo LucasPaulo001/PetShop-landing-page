@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetShop</title>
     <link rel="stylesheet" href="css/main.css">
+   
 </head>
 
 <body>
     <header id="header_content">
         <div id="logo">
             <h1>PetShop</h1>
+        </div>
+        <div id="icon-menu" onclick="activeMenu()">
+            <ul>
+                <li class="line"><span></span></li>
+                <li class="line"><span></span></li>
+                <li class="line"><span></span></li>
+            </ul>
         </div>
         <div id="menu">
             <ul>
@@ -75,7 +83,7 @@
                         <li>Cama de gato</li>
                     </ul>
                     <div id="btn">
-                        <button class="btnServ">Ir</button>
+                        <a href="#services-cat"><button class="btnServ">Ir</button></a>
                     </div>
                 </div>
                 <div class="img">
@@ -91,7 +99,7 @@
                     <img src="assets/images/dog-cat.png" alt="" height="200px">
                 </div>
             </div>
-            
+
         </section>
         <!--Parte de apresentação dos serviços-->
         <section id="presentation-serv">
@@ -120,17 +128,17 @@
                             <div class="description">
                                 <p>Ração Pedigree</p>
                             </div>
-                        </div> 
+                        </div>
                     </div>
-                    <div id="acessorio">
+                    <div class="acessorio">
                         <div class="description-product">
                             <img class="img-product" src="assets/images/products/coleira.png" alt="">
                             <div class="description">
                                 <p>Coleiras</p>
                             </div>
+                        </div>
                     </div>
                 </div>
-                <hr class="space">
                 <div id="animal-health">
                     <div id="title-health">
                         <h1>Saúde do animal</h1>
@@ -143,18 +151,132 @@
                             <img src="assets/images/doctor.jpg" alt="">
                         </div>
                         <div id="part-description">
-                            <p>No Pet Shop, oferecemos cuidados veterinários de alta qualidade para garantir a saúde e o bem-estar do seu pet. Com uma equipe dedicada de veterinários experientes, estamos comprometidos em proporcionar uma vida longa e feliz para o seu melhor amigo.</p>
+                            <p>No Pet Shop, oferecemos cuidados veterinários de alta qualidade para garantir a saúde e o
+                                bem-estar do seu pet. Com uma equipe dedicada de veterinários experientes, estamos
+                                comprometidos em proporcionar uma vida longa e feliz para o seu melhor amigo. <span
+                                    class="color">Entre em contato para mais informações!</span></p>
                         </div>
                     </div>
+                    <div class="btnC">
+                        <a href="#contato"><button class="btnCont">Contato</button></a>
+                    </div>
+                </div>
+            </div>
 
+            <div id="services-cat">
+                <div class="title">
+                    <h1>Cat Shop</h1>
+                </div>
+                <div id="products_cat">
+                    <div class="title">
+                        <p>Brinquedos, Tigelas para gatos, Cama de gato e muito mais!</p>
+                    </div>
+                    <div id="acessorios-cat">
+                        <div class="acessorio">
+                            <div class="description-product">
+                                <img src="assets/images/products/cama-gato.png" alt="">
+                                <div class="description">
+                                    <p>Camas de gato</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acessorio">
+                            <div class="description-product">
+                                <img src="assets/images/products/tigela-gato.png" alt="" height="250px">
+                                <div class="description">
+                                    <p>Tigelas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="acessorio">
+                        <div class="description-product">
+                            <img src="assets/images/products/toys-cat.png" alt="" height="100px">
+                            <div class="description">
+                                <p>Briquedos para gatos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="wave">
+                <img src="assets/images/wave-top.svg" alt="">
+            </div>
+        </section>
+        <section id="contato">
+            <div id="container-form">
+                <div id="img-form">
+                    <img src="assets/images/dog-form.png" alt="">
+                </div>
+                <div id="contact">
+                    <form action="">
+                        <label for="nome">Nome</label>
+                        <input class="info" type="text" name="nome" placeholder="Digite seu nome">
+
+                        <label for="email">E-mail</label>
+                        <input class="info" type="email" name="email" id="" placeholder="Digite seu e-mail">
+
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="msgContant" type="text" name="mensagem" id=""
+                            placeholder="Digite sua mensagem..."></textarea>
+
+                        <div id="btn-form">
+                            <button class="btnCont">Enviar</button>
+                        </div>
+
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-
+    <footer id="content-footer">
+        <div id="wave">
+            <img src="assets/images/wave-bottom.svg" alt="">
+        </div>
+        <div id="content">
+            <div id="mapa-footer">
+                <h2>Mapa</h2>
+                <ul>
+                    <a href="#content-intro">
+                        <li>Página inicial</li>
+                    </a>
+                    <a href="#servises-dog">
+                        <li>Dog-Shop</li>
+                    </a>
+                    <a href="#services-cat">
+                        <li>Cat-Shop</li>
+                    </a>
+                    <a href="#animal-health">
+                        <li>Saúde do animal</li>
+                    </a>
+                    <a href="#contato">
+                        <li>Contato</li>
+                    </a>
+                </ul>
+            </div>
+            <div id="redes-footer">
+                <h2>Redes Sociais</h2>
+                <ul>
+                    <a href="#">
+                        <li>Instagram</li>
+                    </a>
+                    <a href="#">
+                        <li>GuitHub</li>
+                    </a>
+                    <a href="#">
+                        <li>LinkedIn</li>
+                    </a>
+                </ul>
+            </div>
+            <div id="autor">
+                <h2>Autor</h2>
+                &copy;2024 Criado por Lucas Paulo
+            </div>
+        </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
