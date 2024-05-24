@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetShop</title>
     <link rel="stylesheet" href="css/main.css">
-   
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script defer src="js/reveal.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 
 <body>
@@ -14,49 +16,67 @@
         <div id="logo">
             <h1>PetShop</h1>
         </div>
-        <div id="icon-menu" onclick="activeMenu()">
-            <ul>
-                <li class="line"><span></span></li>
-                <li class="line"><span></span></li>
-                <li class="line"><span></span></li>
-            </ul>
-        </div>
+        <span id="menu-icon" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <div id="menu">
             <ul>
-                <li>Home</li>
-                <li>Contato</li>
-                <li>Serviços</li>
-                <li>Shop</li>
+                <a href="#content-intro">
+                    <li>Home</li>
+                </a>
+                <a href="#contato">
+                    <li>Contato</li>
+                </a>
+                <a href="#content-serv">
+                    <li>Serviços</li>
+                </a>
+                <a href="#presentation-serv">
+                    <li>Shop</li>
+                </a>
             </ul>
         </div>
     </header>
+    <div id="menuMobile">
+        <ul>
+            <a href="#content-intro">
+                <li>Home</li>
+            </a>
+            <a href="#contato">
+                <li>Contato</li>
+            </a>
+            <a href="#content-serv">
+                <li>Serviços</li>
+            </a>
+            <a href="#presentation-serv">
+                <li>Shop</li>
+            </a>
+        </ul>
+    </div>
 
     <main>
         <!--Página inicial da landing page-->
         <section id="content-intro">
             <div id="page1">
                 <div id="container_intro">
-                    <div id="txt">
-                        <h2>Do grooming à saúde, estamos
+                    <div class="txt-top efect-txt-top">
+                        <p>Do grooming à saúde, estamos
                             aqui para seu pet.
-                        </h2>
+                        </p>
                         <div class="btn">
                             <a href="#content-serv"><button class="btnS">Serviços</button></a>
                         </div>
                     </div>
-                    <div id="img">
-                        <img src="assets/images/img-intro.jpeg" alt="">
+                    <div class="img-top efect-img-top">
+                        <img class="img-dog" src="assets/images/img-intro.jpeg" alt="">
                     </div>
                 </div>
             </div>
 
-            <div id="wave">
-                <img src="assets/images/wave-top.svg" alt="">
+            <div id="wave-top">
+                <img class="wave" src="assets/images/wave-top.svg" alt="">
             </div>
         </section>
         <!--Parte dos servisos para cães e gatos-->
         <section id="content-serv">
-            <div id="part-dog-shop">
+            <div class="part-dog-shop efect-dog">
                 <div class="img">
                     <img src="assets/images/Firefly dono negro com seu cachorro de estimação fundo marrom claro 84054.jpg"
                         alt="">
@@ -74,7 +94,7 @@
                     </div>
                 </div>
             </div>
-            <div id="part-cat-shop">
+            <div class="part-cat-shop efect-cat">
                 <div class="txt">
                     <h2>Cat Shop</h2>
                     <ul class="list-txt">
@@ -91,7 +111,7 @@
                 </div>
             </div>
             <!--card da mensagem - cão e gato ao lado-->
-            <div id="msg">
+            <div class="msg efect-msg">
                 <div id="txt-msg">
                     <p class="msg-content">Oferta imperdível: alimente o amor do seu pet com descontos exclusivos!</p>
                 </div>
@@ -117,13 +137,13 @@
                         <h2>Comidas, petiscos, acessórios e muito mais!</h2>
                     </div>
                     <div id="foods">
-                        <div class="description-product">
+                        <div class="description-product efect-service-left">
                             <img class="img-product" src="assets/images/products/biscoitos-dog.png" alt="">
                             <div class="description">
                                 <p>Biscoitos para cães</p>
                             </div>
                         </div>
-                        <div class="description-product">
+                        <div class="description-product efect-service-right">
                             <img class="img-product" src="assets/images/products/pedigree.png" alt="">
                             <div class="description">
                                 <p>Ração Pedigree</p>
@@ -131,7 +151,7 @@
                         </div>
                     </div>
                     <div class="acessorio">
-                        <div class="description-product">
+                        <div class="description-product efect-service-bottom">
                             <img class="img-product" src="assets/images/products/coleira.png" alt="">
                             <div class="description">
                                 <p>Coleiras</p>
@@ -139,7 +159,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="animal-health">
+                <div class="animal-health efect-service-left">
                     <div id="title-health">
                         <h1>Saúde do animal</h1>
                     </div>
@@ -173,7 +193,7 @@
                     </div>
                     <div id="acessorios-cat">
                         <div class="acessorio">
-                            <div class="description-product">
+                            <div class="description-product efect-service-left">
                                 <img src="assets/images/products/cama-gato.png" alt="">
                                 <div class="description">
                                     <p>Camas de gato</p>
@@ -181,7 +201,7 @@
                             </div>
                         </div>
                         <div class="acessorio">
-                            <div class="description-product">
+                            <div class="description-product efect-service-right">
                                 <img src="assets/images/products/tigela-gato.png" alt="" height="250px">
                                 <div class="description">
                                     <p>Tigelas</p>
@@ -190,7 +210,7 @@
                         </div>
                     </div>
                     <div class="acessorio">
-                        <div class="description-product">
+                        <div class="description-product efect-service-bottom">
                             <img src="assets/images/products/toys-cat.png" alt="" height="100px">
                             <div class="description">
                                 <p>Briquedos para gatos</p>
@@ -199,16 +219,16 @@
                     </div>
                 </div>
             </div>
-            <div id="wave">
+            <div id="wave-low">
                 <img src="assets/images/wave-top.svg" alt="">
             </div>
         </section>
         <section id="contato">
             <div id="container-form">
-                <div id="img-form">
-                    <img src="assets/images/dog-form.png" alt="">
+                <div class="img-form">
+                    <img class="efect-dog-form" src="assets/images/dog-form.png" alt="">
                 </div>
-                <div id="contact">
+                <div class="contact efect-service-bottom">
                     <form action="">
                         <label for="nome">Nome</label>
                         <input class="info" type="text" name="nome" placeholder="Digite seu nome">
@@ -230,8 +250,8 @@
         </section>
     </main>
 
-    <footer id="content-footer">
-        <div id="wave">
+    <footer class="content-footer efect-footer">
+        <div id="wave-low">
             <img src="assets/images/wave-bottom.svg" alt="">
         </div>
         <div id="content">
@@ -258,13 +278,13 @@
             <div id="redes-footer">
                 <h2>Redes Sociais</h2>
                 <ul>
-                    <a href="#">
+                    <a href="https://www.instagram.com/_lucaspaul0_/"target="_blank">
                         <li>Instagram</li>
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/LucasPaulo001"target="_blank">
                         <li>GuitHub</li>
                     </a>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/lucaspaulo0/" target="_blank">
                         <li>LinkedIn</li>
                     </a>
                 </ul>
