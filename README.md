@@ -4,7 +4,7 @@
 
 - O site aborda serviços prestados po um petshop(fictício).
 
-<img src="images/foto-pag-inicial.png" alt="tela inicial" style="width:300px;height:200px;">
+![Descrição da Imagem](readme/foto-pag-inicial.png){:width="300px" height="200px"}
 - ## 🛠️ Funcionalidades do projeto.
 - Site com rolagem automática até áreas de interesse
 - Apresentação do conteúdo de forma simples e dinâmica
