@@ -1,9 +1,18 @@
+//Funcionalidade do menu mobile Abertura e fechamento
+const menuMob = document.getElementById('menu')
 function clickMenu() {
-   var menu = document.querySelector('#menuMobile')
-   var menuDesktop = document.querySelector('#menu')
-   if(menu.style.display == 'block'){
-     menu.style.display = 'none'
-   } else{
-     menu.style.display = 'block'
-   }
+   menuMob.classList.add('ativeMenuMob')
 }
+menuMob.addEventListener('click', (element) => {
+  if(element.target.id === 'closeMenu'){
+    menuMob.classList.remove('ativeMenuMob')
+  }
+})
+
+//Fechamento ao clicar nos links
+const closeLinks = document.querySelectorAll('.link')
+closeLinks.forEach((element) => {
+  element.addEventListener('click', () => {
+    menuMob.classList.remove('ativeMenuMob')
+  })
+})
